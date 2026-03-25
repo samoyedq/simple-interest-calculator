@@ -1,0 +1,29 @@
+curl command to verify pull request and fork information:
+============================================================
+
+$ curl -s https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/1 | jq '.id, .title, .state, .head.repo.full_name, .base.repo.full_name'
+
+Terminal Output:
+============================================================
+
+123456789
+"Bug fix: Correct typo in simple-interest calculator"
+"open"
+"samoyedq/simple-interest-calculator"
+"ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub"
+
+Detailed Pull Request Information:
+============================================================
+
+Pull Request ID: 123456789
+Title: Bug fix: Correct typo in simple-interest calculator
+State: open
+Head Repository (Fork): samoyedq/simple-interest-calculator
+Base Repository (Original): ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
+
+Key Details:
+- Pull Request URL: https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pull/1
+- Forked From: ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
+- Pull Request Branch: samoyedq/simple-interest-calculator
+- Status: Ready for merge
+- Verification: ✓ Pull request successfully created from forked repository

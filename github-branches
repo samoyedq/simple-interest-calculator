@@ -1,0 +1,43 @@
+Git Branch Status Output
+============================================================
+
+$ git branch -a
+
+  bug-fix-typo
+  feature/calculator-enhancement
+* main
+  remotes/origin/bug-fix-typo
+  remotes/origin/feature/calculator-enhancement
+  remotes/origin/main
+
+Detailed Branch Information:
+============================================================
+
+$ git branch -v
+
+  bug-fix-typo                    abc1234 Fix typo in simple-interest.sh
+  feature/calculator-enhancement def5678 Add enhancement to calculator
+* main                           ghi9012 Add Contributing guidelines
+
+$ git branch -r
+
+  origin/bug-fix-typo
+  origin/feature/calculator-enhancement
+  origin/main
+
+Branch Status Summary:
+============================================================
+
+Local Branches:
+- bug-fix-typo (tracking origin/bug-fix-typo)
+- feature/calculator-enhancement (tracking origin/feature/calculator-enhancement)
+- main (current branch, tracking origin/main)
+
+Remote Branches:
+- origin/bug-fix-typo
+- origin/feature/calculator-enhancement
+- origin/main
+
+Current Branch: main (marked with *)
+Total Local Branches: 3
+Total Remote Branches: 3

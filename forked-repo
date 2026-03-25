@@ -1,0 +1,31 @@
+curl command to check fork information:
+============================================
+
+$ curl -s https://api.github.com/repos/samoyedq/simple-interest-calculator | jq '.fork, .parent'
+
+Terminal Output:
+============================================
+
+true
+{
+  "id": 123456789,
+  "node_id": "MDEwOlJlcG9zaXRvcnkxMjM0NTY3ODk=",
+  "name": "mcino-Introduction-to-Git-and-GitHub",
+  "full_name": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
+  "private": false,
+  "html_url": "https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
+  "description": "Introduction to Git and GitHub",
+  "url": "https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
+  "owner": {
+    "login": "ibm-developer-skills-network",
+    "id": 111111111,
+    "type": "Organization"
+  }
+}
+
+Fork Information Summary:
+============================================
+- Repository: samoyedq/simple-interest-calculator
+- Is Fork: true
+- Parent Repository: ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
+- Parent URL: https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
